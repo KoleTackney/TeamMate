@@ -3,7 +3,7 @@ import Head from "next/head";
 import { trpc } from "../utils/trpc";
 import type { inferProcedureOutput } from "@trpc/server";
 import type { AppRouter } from "@acme/api";
-import { HelloWorld } from "@acme/ui";
+// import { HelloWorld } from "@acme/ui";
 import { useAuth, UserButton } from "@clerk/nextjs";
 //import { button } from "@acme/ui";
 import Link from "next/link";
@@ -20,7 +20,6 @@ const Home: NextPage = () => {
       <main className="flex h-screen flex-col items-center bg-gradient-to-tr from-[#080111] via-[#250058] to-[#33007a] text-white">
         {isSignedIn && (
           <div className="flex flex-col items-center justify-center gap-4">
-            <HelloWorld />
             <h1 className="text-4xl font-bold">Welcome to TeamMate</h1>
             <div className="flex flex-col items-center justify-center gap-4">
               <p className="text-center text-2xl">
